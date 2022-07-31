@@ -1,0 +1,68 @@
+* GRAFOS
+    -> Utilizados para se analisar redes complexos
+
+Por que se chama redes complexas, e não teoria dos grafos aplicada?
+    -> Uma rede complexa representa a estrutura de um sistema complexo, definidos por um conjunto de elementos conectados que leva a 
+       algo muito mais complexo.
+
+* Tipos de redes
+    -> Undirected (não dirigidas)
+        |-> As direções não tem direção (exemplo: amigos do facebook)
+        |-> Grafo não orientado
+    -> Directed (dirigidas)
+        |-> As direções têm direção (exemplo: contatos do Twitter)
+        |-> Grafo orientado
+
+    -> Podemos ter redes onde os vértices apresentam conexões.
+
+    -> Redes podem ter peso (arestas ponderadas)
+        |-> Maioria das redes complexas apresentam peso
+
+* Caso mais geral de redes complexas: DIRIGIDA (dígrafo) e PONDERADA
+
+Nem sempre estamos interessados na estrutura dirigida e ponderada, apenas em como ela está organizada
+    -> Podemos transformar uma rede dirigida com peso em uma rede dirigida e sem peso
+        |-> Para isso, definimos um treshold (um limiar) de forma que as conexões que forem menores que seu valor serão igualadas a 0
+        |-> Com a rede representada por uma matriz de adjacências, isto significa, basicamente:
+            
+            A = T((A + A^T), t=0), 
+                
+            ou seja, somamos a matriz com sua transposta (para que deixe de ser dirigida) e aplicar o treshold
+
+== Armazenando os dados no computador
+
+    -> Matriz de adjacências
+        |-> Vantagens: 
+            |-> Fácil acesso
+            |-> Permite tratamento matemático
+        |-> Desvantagens: 
+            |-> Muito espaço ocupado
+
+    -> Lista
+        |-> Vantagens: 
+            |-> espaço de armazenamento
+        |-> Desvantagens: 
+            |-> Difícil acesso
+            |-> Sem bom tratamento matemático
+
+    -> Lista de adjacências
+        |-> Vantagens: 
+            |-> espaço de armazenamento
+        |-> Desvantagens: 
+            |-> Sem bom tratamento matemático
+
+== Tipos de redes complexas
+
+    -> Redes ESTÁTICAS:
+        |-> Redes simples, dígrafos ponderados
+        |-> Estáticas: não há modificação das conexões ao longo do tempo
+
+    -> Redes BIPARTIDA:
+        |-> Duas classes de vértices, com as conexões apenas entre classes
+        
+    -> Redes MULTICAMADAS (Multilayer Networks):
+        |-> Redes conectadas com outras redes
+
+    -> Redes TEMPORAIS (Temporal Networks):
+        |-> Redes mudam com o tempo
+        

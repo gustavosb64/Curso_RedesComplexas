@@ -1,0 +1,21 @@
+Sistemas Complexos
+    |-> Conjunto de partes discretas que interagem => redes complexas
+
+Redes complexas:
+    |-> Conjunto de elementos (vértices) conectados através de arestas
+    |-> Um sistema complexo é formado por partes interconectadas de tal forma que o todo não pode ser explicado pela soma das suas partes
+    |-> Características:
+        |-> Sem controle central
+        |-> Auto-organização
+        |-> Evolução
+        |-> Adaptação
+    |-> Propriedades:
+        |-> Emergência
+        |-> Hierarquia
+        |-> Universalidade
+            |-> Leis de potência
+            |-> Rede sem escala
+    |-> O comportamento do sistema não pode ser explicado pela soma das partes
+
+----------------------------------
+Efeitos small world
